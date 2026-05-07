@@ -14,8 +14,10 @@ public class IntegerToRoman {
                 "Il numero deve essere compreso tra 1 e 1000");
         }
 
-        int[] valori = {50, 40, 10, 9, 5, 4, 1};
-        String[] simboli = {"L","XL","X", "IX","V", "IV","I"};
+        int[] valori = {100, 90 ,50, 40, 10, 9, 5, 4, 1};
+        String[] simboli = {
+            "C", "XC",
+            "L","XL","X", "IX","V", "IV","I"};
         
         String roman = "";
         
