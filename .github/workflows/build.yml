@@ -32,10 +32,12 @@ jobs:
       # Creazione pacchetto e analisi statica
       - name: Package ed Analisi Statica
         run: mvn -B package
-
-      # Calcolo coverage e invio report a Coveralls
+      
+      #Calcolo e invio di coveralls
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          files: target/site/jacoco/jacoco.xml
+          format: jacoco
 
