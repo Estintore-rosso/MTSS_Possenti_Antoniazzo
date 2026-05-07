@@ -34,6 +34,8 @@ jobs:
         run: mvn -B package
 
       # Calcolo coverage e invio report a Coveralls
-      - name: Report Coveralls
-        run: mvn -B coveralls:report -DrepoToken=${{ secrets.COVERALLS_REPO_TOKEN }}
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
