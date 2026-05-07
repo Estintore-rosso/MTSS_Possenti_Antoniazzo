@@ -11,10 +11,6 @@ import org.junit.Test;
 
 public class RomanPrinterTest {
 
-    // ==========================================
-    // TEST LETTERE SINGOLE
-    // ==========================================
-
     @Test
     public void testPrintNumberOneToAsciiI() {
         // Arrange
@@ -150,7 +146,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testPrintNumberFourteenToAsciiXIV() {
-        // Arrange: 14 = XIV (mischia una decina, un'unità e una sottrazione)
+        // Arrange
         int number = 14;
         String expected = 
             "__   __  _____  __      __ \n" +
@@ -169,7 +165,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testPrintNumberSixHundredFiftyToAsciiDCL() {
-        // Arrange: 650 = DCL (sequenza in discesa di centinaia e decine)
+        // Arrange
         int number = 650;
         String expected = 
             " _____     _____   _       \n" +
@@ -188,7 +184,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testPrintNumberNineHundredToAsciiCM() {
-        // Arrange: 900 = CM (regola di sottrazione sui numeri grossi)
+        // Arrange
         int number = 900;
         String expected = 
             "  _____   __  __  \n" +
